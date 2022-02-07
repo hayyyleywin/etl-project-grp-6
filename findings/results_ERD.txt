@@ -1,0 +1,46 @@
+Regional
+-------------
+Regional_id  PK  INT
+Regional_name VARCHAR(100)
+
+
+country_code
+-------------
+Country_id pk INT
+Regional_id INT FK >- regional.regional_id
+English_name VARCHAR(100)
+Alpha-2_code VARCHAR(100)
+Alpha-3_code VARCHAR(100)
+Numeric_code INT
+ISO_3166-2  VARCHAR(100)
+Land_Area INT
+
+yearly
+-------------
+yearly_id PK INT
+past_year INT
+
+
+world_happiness
+-------------
+country_id  INT FK >- Country_code.country_id
+yearly_id INT FK >- yearly.yearly_id
+Life_Ladder      FLOAT
+Log_GDP_per_capita      FLOAT
+Social_support      FLOAT
+Healthy_life_expectancy_at_birth      FLOAT
+Freedom_to_make_life_choices      FLOAT
+Generosity      FLOAT
+Perceptions_of_corruption      FLOAT
+
+
+population_by_country
+-------------
+country_id  INT FK >- Country_code.country_id
+yearly_id INT FK >- yearly.yearly_id
+Population      INT
+Net_Change      INT
+Migrants      FLOAT
+Fert_Rate      VARCHAR(100)
+Med_Age      VARCHAR(100)
+Urban_Pop_%      VARCHAR(100)

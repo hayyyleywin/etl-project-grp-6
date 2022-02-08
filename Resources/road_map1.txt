@@ -1,0 +1,159 @@
+Table Name:  0     wikipedia-iso-country-codes.csv
+-------------------------------------------------- 
+
+Table Info:
+-------------------------
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 246 entries, 0 to 245
+Data columns (total 5 columns):
+ #   Column                         Non-Null Count  Dtype 
+---  ------                         --------------  ----- 
+ 0   English short name lower case  246 non-null    object
+ 1   Alpha-2 code                   245 non-null    object
+ 2   Alpha-3 code                   246 non-null    object
+ 3   Numeric code                   246 non-null    int64 
+ 4   ISO 3166-2                     246 non-null    object
+dtypes: int64(1), object(4)
+memory usage: 9.7+ KB
+
+Column/s Describition
+ -------------------------
+       Alpha-2 code
+count           245
+unique          245
+top              LB
+freq              1
+
+
+
+Table Name:  1     population_by_country_2020.csv
+-------------------------------------------------- 
+
+Table Info:
+-------------------------
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 235 entries, 0 to 234
+Data columns (total 11 columns):
+ #   Column                   Non-Null Count  Dtype  
+---  ------                   --------------  -----  
+ 0   Country (or dependency)  235 non-null    object 
+ 1   Population (2020)        235 non-null    int64  
+ 2   Yearly Change            235 non-null    object 
+ 3   Net Change               235 non-null    int64  
+ 4   Density (P/Km²)          235 non-null    int64  
+ 5   Land Area (Km²)          235 non-null    int64  
+ 6   Migrants (net)           201 non-null    float64
+ 7   Fert. Rate               235 non-null    object 
+ 8   Med. Age                 235 non-null    object 
+ 9   Urban Pop %              235 non-null    object 
+ 10  World Share              235 non-null    object 
+dtypes: float64(1), int64(4), object(6)
+memory usage: 20.3+ KB
+
+Column/s Describition
+ -------------------------
+       Migrants (net)
+count      201.000000
+mean         6.283582
+std     123291.887548
+min    -653249.000000
+25%     -10047.000000
+50%       -852.000000
+75%       9741.000000
+max     954806.000000
+
+
+
+Table Name:  2     world-happiness-report.csv
+-------------------------------------------------- 
+
+Table Info:
+-------------------------
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1949 entries, 0 to 1948
+Data columns (total 11 columns):
+ #   Column                            Non-Null Count  Dtype  
+---  ------                            --------------  -----  
+ 0   Country name                      1949 non-null   object 
+ 1   year                              1949 non-null   int64  
+ 2   Life Ladder                       1949 non-null   float64
+ 3   Log GDP per capita                1913 non-null   float64
+ 4   Social support                    1936 non-null   float64
+ 5   Healthy life expectancy at birth  1894 non-null   float64
+ 6   Freedom to make life choices      1917 non-null   float64
+ 7   Generosity                        1860 non-null   float64
+ 8   Perceptions of corruption         1839 non-null   float64
+ 9   Positive affect                   1927 non-null   float64
+ 10  Negative affect                   1933 non-null   float64
+dtypes: float64(9), int64(1), object(1)
+memory usage: 167.6+ KB
+
+Column/s Describition
+ -------------------------
+       Log GDP per capita  Social support  Healthy life expectancy at birth  \
+count         1913.000000     1936.000000                       1894.000000   
+mean             9.368453        0.812552                         63.359374   
+std              1.154084        0.118482                          7.510245   
+min              6.635000        0.290000                         32.300000   
+25%              8.464000        0.749750                         58.685000   
+50%              9.460000        0.835500                         65.200000   
+75%             10.353000        0.905000                         68.590000   
+max             11.648000        0.987000                         77.100000   
+
+       Freedom to make life choices   Generosity  Perceptions of corruption  \
+count                   1917.000000  1860.000000                1839.000000   
+mean                       0.742558     0.000103                   0.747125   
+std                        0.142093     0.162215                   0.186789   
+min                        0.258000    -0.335000                   0.035000   
+25%                        0.647000    -0.113000                   0.690000   
+50%                        0.763000    -0.025500                   0.802000   
+75%                        0.856000     0.091000                   0.872000   
+max                        0.985000     0.698000                   0.983000   
+
+       Positive affect  Negative affect  
+count      1927.000000      1933.000000  
+mean          0.710003         0.268544  
+std           0.107100         0.085168  
+min           0.322000         0.083000  
+25%           0.625500         0.206000  
+50%           0.722000         0.258000  
+75%           0.799000         0.320000  
+max           0.944000         0.705000  
+
+
+
+Table Name:  3     world-happiness-report-2021.csv
+-------------------------------------------------- 
+
+Table Info:
+-------------------------
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 149 entries, 0 to 148
+Data columns (total 20 columns):
+ #   Column                                      Non-Null Count  Dtype  
+---  ------                                      --------------  -----  
+ 0   Country name                                149 non-null    object 
+ 1   Regional indicator                          149 non-null    object 
+ 2   Ladder score                                149 non-null    float64
+ 3   Standard error of ladder score              149 non-null    float64
+ 4   upperwhisker                                149 non-null    float64
+ 5   lowerwhisker                                149 non-null    float64
+ 6   Logged GDP per capita                       149 non-null    float64
+ 7   Social support                              149 non-null    float64
+ 8   Healthy life expectancy                     149 non-null    float64
+ 9   Freedom to make life choices                149 non-null    float64
+ 10  Generosity                                  149 non-null    float64
+ 11  Perceptions of corruption                   149 non-null    float64
+ 12  Ladder score in Dystopia                    149 non-null    float64
+ 13  Explained by: Log GDP per capita            149 non-null    float64
+ 14  Explained by: Social support                149 non-null    float64
+ 15  Explained by: Healthy life expectancy       149 non-null    float64
+ 16  Explained by: Freedom to make life choices  149 non-null    float64
+ 17  Explained by: Generosity                    149 non-null    float64
+ 18  Explained by: Perceptions of corruption     149 non-null    float64
+ 19  Dystopia + residual                         149 non-null    float64
+dtypes: float64(18), object(2)
+memory usage: 23.4+ KB
+
+
+

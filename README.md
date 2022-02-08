@@ -10,6 +10,7 @@ The original 4 data sources used were:
 - wikipedia-iso-country-codes.csv
 
 Transformation
+
 In order to transform the public data and use it in our study we performed the following:
 
 Used Pandas functions in Jupyter Notebook to load all three CSV files.
@@ -20,7 +21,8 @@ Use of Heatmap for visual display of data
 - Removed Countries less than 50K pop and matched UN country code list. 
 
 
-Load
+Load 
+
 As part of normalisation, a yearly calander has been added as a reference table.
 - Country used as Primary Key between data tables
 - The use case dictates that this DB will expand
